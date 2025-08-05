@@ -1,0 +1,226 @@
+:root {
+  --bg: #f4f3ee;
+  --text: #232321;
+  --accent: #5754ff;
+  --highlight: #f7976c;
+  --dark-bg: #232321;
+  --dark-text: #f4f3ee;
+  --dark-accent: #7e77ff;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  transition: background .4s, color .4s;
+}
+.dark-mode {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 5vw;
+  background: var(--accent);
+  color: white;
+}
+nav .logo {
+  font-family: 'Pacifico', cursive, serif;
+  font-size: 2em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2vw;
+  margin: 0;
+  padding: 0;
+}
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color .2s;
+}
+nav li a:hover { color: var(--highlight); }
+nav #theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0 5vh 0;
+  min-height: 40vh;
+  text-align: center;
+  animation: fadeIn 1.2s;
+}
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-top: 2vh;
+  object-fit: cover;
+  border: 5px solid var(--accent);
+}
+h1 {
+  font-family: 'Pacifico', cursive, serif;
+  font-size: 2.5em;
+}
+h2 { font-size: 2em; margin-top: 2vh; }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 5vw;
+}
+.about .about-photo {
+  width: 140px;
+  border-radius: 18px;
+  margin: 2vw;
+  border: 3px solid var(--highlight);
+}
+.about .fun-facts {
+  list-style: disc inside;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.projects .projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+}
+.project-card {
+  background: #fff8ee;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #23232110;
+  padding: 2vw 2vh;
+  margin: 2vw 0;
+  width: 300px;
+  transition: transform .2s, box-shadow .3s;
+  border: 2px solid var(--highlight);
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 24px #23232122;
+  border-color: var(--accent);
+}
+
+.now, .contact, .skills, .testimonials, .story {
+  padding: 4vh 5vw;
+  text-align: center;
+}
+.toolbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+}
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vw;
+  padding: 1vw 1.5vw;
+  border-radius: 12px;
+  background: #eaf2ff;
+  min-width: 120px;
+  max-width: 160px;
+  transition: box-shadow .2s;
+}
+.tool:hover { box-shadow: 0 4px 12px #23232115; }
+.tool span { font-size: 2em; margin-bottom: 0.2em; }
+.tool-desc { font-weight: bold; }
+
+.testimonial-card {
+  background: #fff7fa;
+  margin: 1vw auto;
+  border-radius: 12px;
+  padding: 2vh 2vw;
+  max-width: 400px;
+  font-style: italic;
+  border: 1.5px solid var(--highlight);
+}
+
+.story .timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5em;
+  max-width: 540px;
+  margin: 0 auto;
+}
+.timeline-event {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.1em;
+}
+.timeline-event span { font-size: 1.6em; }
+
+.contact form {
+  background: #f7fcff;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  padding: 2vw;
+  border-radius: 14px;
+  max-width: 400px;
+  margin: 2vh auto;
+}
+.contact input, .contact textarea {
+  border: 1.2px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.7em;
+  font-size: 1em;
+  width: 90%;
+  max-width: 300px;
+}
+.contact button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.8em 2em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.contact button:hover { background: var(--highlight); }
+.contact-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-links a:hover { color: var(--highlight); }
+.quirk { margin-top: 2vh; font-style: italic; color: var(--highlight); }
+
+footer {
+  text-align: center;
+  padding: 1vh;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'Pacifico', cursive, serif;
+  font-size: 1em;
+}
+
+@media (max-width: 700px) {
+  nav ul { flex-direction: column; gap: 4vw;}
+  .about, .projects .projects-grid, .toolbox, .timeline, .story { flex-direction: column; }
+  .project-card, .timeline-event { width: 90vw; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(26px);}
+  to { opacity: 1; transform: translateY(0);}
+}
