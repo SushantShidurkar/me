@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sushant Shidurkar | Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Handwritten font for headers -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">Sushant</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#now">Now</a></li>
+      <li><a href="#skills">Toolbox</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#story">Story So Far</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+  <section id="hero" class="hero">
+    <div>
+      <h1>Sushant Shidurkar</h1>
+      <h2>Fullstack Developer & Lifelong Learner</h2>
+      <p>Turning complex challenges into meaningful stories with code.<br>
+      Driven by curiosity, collaboration, and the thrill of building things that matter.</p>
+    </div>
+    <img src="your-photo.jpg" alt="Sushant Shidurkar photo" class="hero-photo"/>
+  </section>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div>
+      <img src="about-photo.jpg" alt="Candid Sushant" class="about-photo"/>
+      <div>
+        <p>
+          From tinkering with tech in Nagpur, to building cutting-edge financial solutions in Amsterdam, my journey has always been powered by curiosity, grit, and the people I meet along the way. When I’m not deep in code, you’ll find me reading, hiking, or exploring the hidden gems of every city I land in.
+        </p>
+        <p><strong>Values:</strong> Growth Mindset • Collaboration • Empathy in Tech • Continuous Learning</p>
+        <ul class="fun-facts">
+          <li>Can finish a Rubik’s Cube in under 1.5 minutes</li>
+          <li>Fan of chai and sci-fi</li>
+          <li>Fluent in Hindi, Marathi, and English</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Example; duplicate and customize -->
+      <div class="project-card">
+        <h3>Consumer Credits Platform</h3>
+        <p>
+          Leading the migration to modern frameworks wasn’t just about tech—it was an exercise in empathy, communication, and giving users a faster, simpler experience.
+        </p>
+        <ul>
+          <li>Migrated frontend: AngularJS to Vue.js</li>
+          <li>Upgraded CI/CD & improved performance</li>
+          <li>Lesson: Small innovations, big impact!</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="now" class="now">
+    <h2>Now</h2>
+    <p>
+      What I’m doing this month: deep diving into serverless architecture on Azure, reading ‘Atomic Habits’, exploring new hiking paths every weekend, and mentoring junior devs at TCS. (Ask me about my newest side project or latest book rec!)
+    </p>
+  </section>
+  <section id="skills" class="skills">
+    <h2>Toolbox</h2>
+    <div class="toolbox">
+      <div class="tool">
+        <span>☕</span>
+        <div class="tool-desc">Java & Spring Boot</div>
+        <small>For when things get serious</small>
+      </div>
+      <div class="tool">
+        <span>🖌️</span>
+        <div class="tool-desc">Vue.js & Angular</div>
+        <small>My sculpting tools for beautiful UIs</small>
+      </div>
+      <div class="tool">
+        <span>☁️</span>
+        <div class="tool-desc">Azure & DevOps</div>
+        <small>Lifting ideas to the cloud</small>
+      </div>
+      <div class="tool">
+        <span>📈</span>
+        <div class="tool-desc">Google Analytics</div>
+        <small>Compass for user journeys</small>
+      </div>
+      <div class="tool">
+        <span>🛡️</span>
+        <div class="tool-desc">JUnit & Mockito</div>
+        <small>My shields for quality</small>
+      </div>
+      <div class="tool">
+        <span>💬</span>
+        <div class="tool-desc">Communication</div>
+        <small>Turning teamwork into magic</small>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-card">
+      <p>"Sushant brings heart to every line of code."<br>—Mentor</p>
+    </div>
+    <div class="testimonial-card">
+      <p>"The bridge between tech and people."<br>—Coworker</p>
+    </div>
+  </section>
+  <section id="story" class="story">
+    <h2>Story So Far</h2>
+    <div class="timeline">
+      <div class="timeline-event">
+        <span>🎓</span>
+        <div>B.E., Information Technology, G.H. Raisoni College of Engineering (2011–2015)</div>
+      </div>
+      <div class="timeline-event">
+        <span>💼</span>
+        <div>Tata Consultancy Services: System Engineer → Analyst → Assistant Consultant (2015–now)</div>
+      </div>
+      <div class="timeline-event">
+        <span>🌍</span>
+        <div>Moved to Amsterdam, led full-stack dev for ABN AMRO Bank (2021–now)</div>
+      </div>
+      <div class="timeline-event">
+        <span>🏆</span>
+        <div>Recognized for leading innovative solutions (migration to Vue.js, improved doc upload, etc.)</div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Let’s Connect!</h2>
+    <form action="mailto:sushantshidurkar@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="email" name="email" placeholder="Your Email" required/>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-links">
+      <a href="mailto:sushantshidurkar@gmail.com">Email</a> |
+      <a href="https://www.linkedin.com/in/sushant-shidurkar">LinkedIn</a>
+    </div>
+    <p class="quirk">P.S. I’m always up for a cup of chai.</p>
+  </section>
+  <footer>
+    <p>© 2024 Sushant Shidurkar</p>
+  </footer>
+</body>
+</html>
