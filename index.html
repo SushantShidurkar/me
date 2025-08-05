@@ -1,157 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sushant Shidurkar | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"/>
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Shidurkar | Modern Portfolio</title>
+    <meta name="description" content="Senior Full Stack Developer with 9+ years experience in Java, Spring Boot, Vue.js, Angular, and Azure cloud infrastructure">
+    <meta name="keywords" content="Full Stack Developer, Java, Spring Boot, Vue.js, Angular, Azure, TCS, ABN AMRO">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Sushant</div>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#now">Now</a></li>
-      <li><a href="#skills">Toolbox</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#story">Story So Far</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-  </nav>
-  <section id="hero" class="hero">
-    <div>
-      <h1>Sushant Shidurkar</h1>
-      <h2>Fullstack Developer & Lifelong Learner</h2>
-      <p>Turning complex challenges into meaningful stories with code.<br>
-      Driven by curiosity, collaboration, and the thrill of building things that matter.</p>
-    </div>
-    <img src="your-photo.jpg" alt="Sushant Shidurkar photo" class="hero-photo"/>
-  </section>
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <div>
-      <img src="about-photo.jpg" alt="Candid Sushant" class="about-photo"/>
-      <div>
-        <p>
-          From tinkering with tech in Nagpur, to building cutting-edge financial solutions in Amsterdam, my journey has always been powered by curiosity, grit, and the people I meet along the way. When I’m not deep in code, you’ll find me reading, hiking, or exploring the hidden gems of every city I land in.
-        </p>
-        <p><strong>Values:</strong> Growth Mindset • Collaboration • Empathy in Tech • Continuous Learning</p>
-        <ul class="fun-facts">
-          <li>Can finish a Rubik’s Cube in under 1.5 minutes</li>
-          <li>Fan of chai and sci-fi</li>
-          <li>Fluent in Hindi, Marathi, and English</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Consumer Credits Platform</h3>
-        <p>
-          Leading the migration to modern frameworks wasn’t just about tech—it was an exercise in empathy, communication, and giving users a faster, simpler experience.
-        </p>
-        <ul>
-          <li>Migrated frontend: AngularJS to Vue.js</li>
-          <li>Upgraded CI/CD & improved performance</li>
-          <li>Lesson: Small innovations, big impact!</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="now" class="now">
-    <h2>Now</h2>
-    <p>
-      What I’m doing this month: deep diving into serverless architecture on Azure, reading ‘Atomic Habits’, exploring new hiking paths every weekend, and mentoring junior devs at TCS. (Ask me about my newest side project or latest book rec!)
-    </p>
-  </section>
-  <section id="skills" class="skills">
-    <h2>Toolbox</h2>
-    <div class="toolbox">
-      <div class="tool">
-        <span>☕</span>
-        <div class="tool-desc">Java & Spring Boot</div>
-        <small>For when things get serious</small>
-      </div>
-      <div class="tool">
-        <span>🖌️</span>
-        <div class="tool-desc">Vue.js & Angular</div>
-        <small>My sculpting tools for beautiful UIs</small>
-      </div>
-      <div class="tool">
-        <span>☁️</span>
-        <div class="tool-desc">Azure & DevOps</div>
-        <small>Lifting ideas to the cloud</small>
-      </div>
-      <div class="tool">
-        <span>📈</span>
-        <div class="tool-desc">Google Analytics</div>
-        <small>Compass for user journeys</small>
-      </div>
-      <div class="tool">
-        <span>🛡️</span>
-        <div class="tool-desc">JUnit & Mockito</div>
-        <small>My shields for quality</small>
-      </div>
-      <div class="tool">
-        <span>💬</span>
-        <div class="tool-desc">Communication</div>
-        <small>Turning teamwork into magic</small>
-      </div>
-    </div>
-  </section>
-  <section id="testimonials" class="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial-card">
-      <p>"Sushant brings heart to every line of code."<br>—Mentor</p>
-    </div>
-    <div class="testimonial-card">
-      <p>"The bridge between tech and people."<br>—Coworker</p>
-    </div>
-  </section>
-  <section id="story" class="story">
-    <h2>Story So Far</h2>
-    <div class="timeline">
-      <div class="timeline-event">
-        <span>🎓</span>
-        <div>B.E., Information Technology, G.H. Raisoni College of Engineering (2011–2015)</div>
-      </div>
-      <div class="timeline-event">
-        <span>💼</span>
-        <div>Tata Consultancy Services: System Engineer → Analyst → Assistant Consultant (2015–now)</div>
-      </div>
-      <div class="timeline-event">
-        <span>🌍</span>
-        <div>Moved to Amsterdam, led full-stack dev for ABN AMRO Bank (2021–now)</div>
-      </div>
-      <div class="timeline-event">
-        <span>🏆</span>
-        <div>Recognized for leading innovative solutions (migration to Vue.js, improved doc upload, etc.)</div>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="contact">
-    <h2>Let’s Connect!</h2>
-    <form action="mailto:sushantshidurkar@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="email" name="email" placeholder="Your Email" required/>
-      <textarea name="message" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <div class="contact-links">
-      <a href="mailto:sushantshidurkar@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/sushant-shidurkar">LinkedIn</a>
-    </div>
-    <p class="quirk">P.S. I’m always up for a cup of chai.</p>
-  </section>
-  <footer>
-    <p>© 2024 Sushant Shidurkar</p>
-  </footer>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Sushant<span class="highlight">.</span></h2>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight typed-text">Sushant Shidurkar</span>
+                    </h1>
+                    <h3 class="hero-subtitle">Full Stack Developer & Cloud Architect</h3>
+                    <p class="hero-description">
+                        Senior Full Stack Developer with 9+ years of experience specializing in Java, Spring Boot, 
+                        Vue.js, and Azure cloud infrastructure. Building scalable solutions that drive business success.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="mailto:sushantshidurkar@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sushant-shidurkar" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="your-photo.jpg" alt="Sushant Shidurkar" class="profile-img">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-image">
+                        <img src="about-photo.jpg" alt="Sushant Shidurkar" class="about-img">
+                        <div class="about-decoration"></div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Welcome to My Portfolio</h3>
+                        <p>From tinkering with tech in Nagpur to building cutting-edge financial solutions in Amsterdam, 
+                        my journey has always been powered by curiosity, grit, and the people I meet along the way.</p>
+                        
+                        <p>Currently, I lead frontend and full-stack development efforts at ABN AMRO Bank, focusing on 
+                        API development, cloud infrastructure, and implementing innovative solutions that enhance user experiences.</p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h4>9+</h4>
+                                <span>Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <h4>50+</h4>
+                                <span>Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <h4>4</h4>
+                                <span>Certifications</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about-skills">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-navigation">
+                <button class="nav-arrow nav-prev" id="prev-project">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-arrow nav-next" id="next-project">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="projects-container" id="projects-container">
+                <div class="project-card active">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Consumer Credits Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Consumer Credits Platform</h3>
+                        <p>Led the migration from AngularJS to Vue.js, modernizing user interfaces and improving performance. 
+                        Enhanced user experience across Internet Banking and Employee Portal platforms.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Document Upload Widget">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Enhanced Document Upload Widget</h3>
+                        <p>Developed and significantly enhanced the document upload functionality, improving user experience 
+                        and reducing processing time by 40%.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>REST API</span>
+                            <span>Azure DevOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="project3.jpg" alt="Microservices Architecture">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Microservices Migration</h3>
+                        <p>Successfully migrated legacy Java 8 applications to Java 17 with microservices architecture, 
+                        improving scalability and maintainability.</p>
+                        <div class="project-tech">
+                            <span>Java 17</span>
+                            <span>Spring Boot</span>
+                            <span>Microservices</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Vue.js</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Angular</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript/TypeScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Spring Boot</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Microsoft Azure</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Azure DevOps</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Jenkins</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Assistant Consultant</h3>
+                        <h4>Tata Consultancy Services</h4>
+                        <p>Leading complex projects and mentoring junior developers while working on cutting-edge technologies.</p>
+                        <div class="timeline-tech">
+                            <span>Leadership</span>
+                            <span>Mentoring</span>
+                            <span>Architecture Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <h4>ABN AMRO Bank N.V.</h4>
+                        <p>Leading development of Consumer Credits applications, managing technology transitions, and implementing innovative solutions.</p>
+                        <div class="timeline-tech">
+                            <span>Vue.js</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Information Technology Analyst</h3>
+                        <h4>Tata Consultancy Services</h4>
+                        <p>Developed enterprise applications and worked on microservices architecture in Amsterdam.</p>
+                        <div class="timeline-tech">
+                            <span>Microservices</span>
+                            <span>REST APIs</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2019</div>
+                    <div class="timeline-content">
+                        <h3>System Engineer</h3>
+                        <h4>Tata Consultancy Services</h4>
+                        <p>Started my journey as a system engineer, learning foundations of enterprise application development.</p>
+                        <div class="timeline-tech">
+                            <span>Java</span>
+                            <span>Web Development</span>
+                            <span>Database Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-subtitle">Client testimonials</p>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Sushant brings heart to every line of code. His technical expertise combined with excellent communication skills makes him an invaluable team member."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="testimonial1.jpg" alt="Client 1">
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <span>Senior Manager, ABN AMRO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"The bridge between tech and people. Sushant's ability to translate complex technical concepts into business value is remarkable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="testimonial2.jpg" alt="Client 2">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Product Owner, TCS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Working with Sushant on the Vue.js migration was exceptional. His attention to detail and commitment to quality is unmatched."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="testimonial3.jpg" alt="Client 3">
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <span>Lead Developer, ABN AMRO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I can do for you</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p>End-to-end web application development using modern technologies like Java, Spring Boot, Vue.js, and Angular.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Azure cloud architecture, migration, and optimization services to scale your applications efficiently.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>DevOps & CI/CD</h3>
+                    <p>Setting up automated deployment pipelines using Azure DevOps and Jenkins for faster, reliable releases.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Frontend Migration</h3>
+                    <p>Modernizing legacy applications with latest frontend frameworks and improving user experience.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>RESTful API design and development with proper documentation and testing for seamless integration.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Application performance tuning, code optimization, and implementing best practices for better efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>sushantshidurkar@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/sushant-shidurkar</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="mailto:sushantshidurkar@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sushant-shidurkar" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Sushant Shidurkar. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:sushantshidurkar@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sushant-shidurkar" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
