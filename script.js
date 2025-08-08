@@ -1,33 +1,84 @@
-// Dynamic year
+// Set dynamic current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Mobile nav toggle
+// Mobile nav toggle logic
 const navToggle = document.querySelector('.nav__toggle');
 const menu = document.getElementById('menu');
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-    navToggle.setAttribute('aria-expanded', String(!expanded));
-    menu.classList.toggle('show');
-  });
-}
 
-// Interactive chips from your skills
-const skills = [
-  'Java', 'Spring Boot', 'Microservices', 'REST APIs', 'Vue.js', 'Angular', 'TypeScript',
-  'HTML', 'CSS', 'Azure', 'Azure DevOps', 'Jenkins', 'PostgreSQL', 'Oracle', 'MongoDB',
-  'JUnit', 'Mockito', 'Cucumber', 'GA4'
-];
-const chipsEl = document.getElementById('skills-chips');
-skills.forEach(s => {
-  const span = document.createElement('span');
-  span.className = 'chip';
-  span.textContent = s;
-  span.title = s;
-  chipsEl.appendChild(span);
+navToggle?.addEventListener('click', () => {
+  const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', String(!expanded));
+  menu.classList.toggle('show');
 });
 
-// Feature projects (sample placeholders you can replace with real repos)
+// Smooth scrolling to anchor links and close mobile menu
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', (e) => {
+    const targetId = anchor.getAttribute('href').substring(1);
+    const targetEl = document.getElementById(targetId);
+    if(targetEl) {
+      e.preventDefault();
+      targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if(menu.classList.contains('show')){
+        menu.classList.remove('show');
+        navToggle.setAttribute('aria-expanded', "false");
+      }
+    }
+  });
+});
+
+// Skills data with competency (percentage 0-100)
+const skills = [
+  { name: 'Java', competency: 90 },
+  { name: 'Spring Boot', competency: 85 },
+  { name: 'Microservices', competency: 85 },
+  { name: 'REST APIs', competency: 80 },
+  { name: 'Vue.js', competency: 88 },
+  { name: 'Angular', competency: 75 },
+  { name: 'TypeScript', competency: 80 },
+  { name: 'HTML', competency: 90 },
+  { name: 'CSS', competency: 85 },
+  { name: 'Azure', competency: 70 },
+  { name: 'Azure DevOps', competency: 75 },
+  { name: 'Jenkins', competency: 70 },
+  { name: 'PostgreSQL', competency: 75 },
+  { name: 'Oracle', competency: 70 },
+  { name: 'MongoDB', competency: 70 },
+  { name: 'JUnit', competency: 80 },
+  { name: 'Mockito', competency: 75 },
+  { name: 'Cucumber', competency: 65 },
+  { name: 'GA4', competency: 60 }
+];
+
+// Render skill cards with animated competency bars
+const skillsGrid = document.getElementById('skills-grid');
+
+skills.forEach(skill => {
+  const card = document.createElement('div');
+  card.className = 'skill-card';
+
+  const name = document.createElement('p');
+  name.className = 'skill-name';
+  name.textContent = skill.name;
+
+  const footer = document.createElement('div');
+  footer.className = 'skill-footer';
+
+  const bar = document.createElement('div');
+  bar.className = 'skill-bar';
+
+  footer.appendChild(bar);
+  card.appendChild(name);
+  card.appendChild(footer);
+  skillsGrid.appendChild(card);
+
+  // Animate the competency bar fill after a short delay
+  setTimeout(() => {
+    bar.style.width = skill.competency + '%';
+  }, 200);
+});
+
+// Projects data
 const projects = [
   {
     title: 'Consumer Credits Portal',
@@ -55,36 +106,24 @@ const projects = [
   }
 ];
 
-const projectsEl = document.getElementById('project-cards');
-projects.forEach(p => {
+// Render projects
+const projectsGrid = document.getElementById('projects-grid');
+
+projects.forEach(project => {
   const card = document.createElement('div');
-  card.className = 'card project';
+  card.className = 'project-card';
+
   card.innerHTML = `
-    <div class="card__thumb">${p.badge}</div>
-    <h3>${p.title}</h3>
-    <p class="card__meta">${p.desc}</p>
-    <div class="tags">${p.tech.map(t => `<span>${t}</span>`).join('')}</div>
-    <div class="card__actions">
-      <a class="btn btn--ghost" href="${p.repo}" target="_blank" rel="noopener">Code</a>
-      <a class="btn" href="${p.link}" target="_blank" rel="noopener">Live</a>
+    <p class="project-badge">${project.badge}</p>
+    <h3 class="project-title">${project.title}</h3>
+    <p class="project-desc">${project.desc}</p>
+    <div class="tags-small">
+      ${project.tech.map(t => `<span>${t}</span>`).join('')}
+    </div>
+    <div class="project-links">
+      <a href="${project.repo}" target="_blank" rel="noopener">Code</a>
+      <a href="${project.link}" target="_blank" rel="noopener">Live</a>
     </div>
   `;
-  projectsEl.appendChild(card);
-});
-
-// Smooth anchor scrolling (native behavior is fine; optional polyfill)
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', (e) => {
-    const id = a.getAttribute('href').slice(1);
-    const target = document.getElementById(id);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior:'smooth', block:'start' });
-      // Close mobile menu after click
-      if (menu.classList.contains('show')) {
-        menu.classList.remove('show');
-        navToggle?.setAttribute('aria-expanded', 'false');
-      }
-    }
-  });
+  projectsGrid.appendChild(card);
 });

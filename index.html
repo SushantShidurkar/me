@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sushant Shidurkar — Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Sushant Shidurkar — Senior Full-Stack Developer (Java, Spring Boot, Vue, Angular) with 9+ years of experience, Azure cloud, microservices.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio of Sushant Shidurkar — Senior Full-Stack Developer with expertise in Java, Spring Boot, Vue, and Azure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
@@ -29,107 +29,46 @@
 
   <main id="home">
     <section class="hero">
-      <div class="hero__grid">
-        <div class="hero__left">
-          <p class="eyebrow">Full-Stack Developer</p>
-          <h1>Hi, I'm <span class="highlight">Sushant Shidurkar</span></h1>
-          <p class="subtitle">
-            Senior Full-Stack Developer with 9+ years building dynamic enterprise web apps and microservices using Java, Spring Boot, Vue, Angular, and Azure.
-          </p>
-          <div class="hero__cta">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
-          </div>
-          <ul class="social">
-            <li>
-              <a href="mailto:sushantshidurkar@gmail.com" aria-label="Email">
-                <span class="icon">✉️</span> Email
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/sushant-shidurkar" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
-                <span class="icon">in</span> LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="assets/Sushant_Shidurkar_Profile.pdf" download aria-label="Download Resume">
-                <span class="icon">⬇️</span> Resume
-              </a>
-            </li>
-          </ul>
+      <div class="hero__content">
+        <h1>Hi, I'm <span class="highlight">Sushant Shidurkar</span></h1>
+        <p class="subtitle">
+          Senior Full-Stack Developer with 9+ years building enterprise web apps and microservices using Java, Spring Boot, Vue, Angular, and Azure.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
         </div>
-        <div class="hero__right">
-          <div class="card stat">
-            <div class="stat__value">9+ yrs</div>
-            <div class="stat__label">Experience</div>
-          </div>
-          <div class="card stat">
-            <div class="stat__value">Java • Vue</div>
-            <div class="stat__label">Core Stack</div>
-          </div>
-          <div class="card stat">
-            <div class="stat__value">Azure</div>
-            <div class="stat__label">Cloud</div>
-          </div>
+        <ul class="social">
+          <li><a href="mailto:sushantshidurkar@gmail.com" aria-label="Email">✉️ Email</a></li>
+          <li><a href="https://www.linkedin.com/in/sushant-shidurkar" target="_blank" rel="noopener" aria-label="LinkedIn Profile">in LinkedIn</a></li>
+          <li><a href="assets/Sushant_Shidurkar_Profile.pdf" download aria-label="Download Resume">⬇️ Resume</a></li>
+        </ul>
+      </div>
+      <div class="hero__stats">
+        <div class="stat-card">
+          <p class="stat-value">9+ yrs</p>
+          <p class="stat-label">Experience</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-value">Java • Vue</p>
+          <p class="stat-label">Core Stack</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-value">Azure</p>
+          <p class="stat-label">Cloud</p>
         </div>
       </div>
-      <div class="hero__bg" aria-hidden="true"></div>
     </section>
 
     <section id="skills" class="section">
       <h2 class="section__title">Skills</h2>
-      <div class="chips" id="skills-chips">
-        <!-- Populated by JS -->
-      </div>
-      <div class="skill-groups">
-        <div class="skill-group">
-          <h3>Backend</h3>
-          <ul>
-            <li>Java (8→17)</li>
-            <li>Spring Boot</li>
-            <li>Microservices</li>
-            <li>RESTful APIs</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Frontend</h3>
-          <ul>
-            <li>Vue.js</li>
-            <li>Angular / AngularJS → Vue migration</li>
-            <li>TypeScript</li>
-            <li>HTML/CSS</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Cloud & DevOps</h3>
-          <ul>
-            <li>Azure (Infra, DevOps)</li>
-            <li>CI/CD (Jenkins → Azure DevOps)</li>
-            <li>Docker</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Data & Testing</h3>
-          <ul>
-            <li>PostgreSQL, Oracle, MongoDB</li>
-            <li>JUnit, Mockito, Cucumber</li>
-            <li>GA4 (Analytics)</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Certifications</h3>
-          <ul>
-            <li>Microsoft Certified: Azure Fundamentals</li>
-            <li>PSPO II</li>
-            <li>AMCAT: Data Processing, Customer Service</li>
-          </ul>
-        </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Skill cards added dynamically -->
       </div>
     </section>
 
     <section id="experience" class="section">
       <h2 class="section__title">Experience</h2>
-
       <article class="timeline">
         <div class="timeline__item">
           <div class="timeline__dot"></div>
@@ -149,7 +88,6 @@
             </div>
           </div>
         </div>
-
         <div class="timeline__item">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
@@ -171,8 +109,8 @@
 
     <section id="projects" class="section">
       <h2 class="section__title">Projects</h2>
-      <div class="cards" id="project-cards">
-        <!-- Populated by JS -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project cards added dynamically -->
       </div>
     </section>
 
@@ -186,11 +124,9 @@
 
     <section id="contact" class="section section--accent">
       <h2 class="section__title">Contact</h2>
-      <p class="contact__copy">
-        Open to senior full-stack roles and product engineering opportunities. Let’s build something impactful.
-      </p>
+      <p class="contact__copy">Open to senior full-stack roles and product engineering opportunities. Let’s build something impactful.</p>
       <form class="contact__form" name="contact" action="https://formsubmit.co/sushantshidurkar@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_captcha" value="false" />
         <div class="form__row">
           <label>
             Name
@@ -206,9 +142,7 @@
           <textarea name="message" rows="4" placeholder="How can we collaborate?" required></textarea>
         </label>
         <button class="btn" type="submit">Send Message</button>
-        <p class="contact__alt">
-          Prefer email? <a href="mailto:sushantshidurkar@gmail.com">sushantshidurkar@gmail.com</a>
-        </p>
+        <p class="contact__alt">Prefer email? <a href="mailto:sushantshidurkar@gmail.com">sushantshidurkar@gmail.com</a></p>
       </form>
     </section>
   </main>
@@ -216,8 +150,8 @@
   <footer class="site-footer">
     <p>© <span id="year"></span> Sushant Shidurkar • Mumbai, India</p>
     <ul class="social">
-      <li><a href="mailto:sushantshidurkar@gmail.com">Email</a></li>
-      <li><a href="https://www.linkedin.com/in/sushant-shidurkar" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:sushantshidurkar@gmail.com" aria-label="Email">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/sushant-shidurkar" target="_blank" rel="noopener" aria-label="LinkedIn Profile">LinkedIn</a></li>
       <li><a href="#home">Top ↑</a></li>
     </ul>
   </footer>
