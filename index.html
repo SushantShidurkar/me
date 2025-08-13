@@ -1,150 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sushant Shidurkar — Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Sushant Shidurkar — Senior Full-Stack Developer with expertise in Java, Spring Boot, Vue, Angular, and Azure." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/favicon.svg" />
-  <script defer src="script.js"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sushant Shidurkar — Full Stack Developer</title>
+<meta name="description" content="Full Stack Developer with 9+ years of experience delivering scalable, cloud-native web applications. Java, Spring Boot, Vue, Angular, Azure expert.">
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="#home" aria-label="Home">SS</a>
-    <nav class="nav" aria-label="Primary">
-      <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-      <ul id="menu" class="nav__list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="btn btn--sm">Contact</a></li>
-        <li><button id="darkModeToggle" class="btn btn--ghost" aria-label="Toggle Dark Mode">🌙</button></li>
-      </ul>
-    </nav>
-  </header>
+<nav class="nav">
+  <div class="container inner">
+    <div class="logo">Sushant<span>.dev</span></div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+  </div>
+</nav>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero__content">
-        <div class="profile-pic-container">
-          <img src="SushantPhoto.jpg" alt="Sushant Shidurkar" class="profile-pic" />
-        </div>
-        <h1 class="animated-name">Hi, I'm <span class="highlight">Sushant Shidurkar</span></h1>
-        <p class="subtitle">Senior Full-Stack Developer with 9+ years building enterprise web apps and microservices using Java, Spring Boot, Vue, Angular, and Azure.</p>
-        <div class="hero__cta">
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
-        </div>
-        <ul class="social">
-          <li><a href="mailto:sushantshidurkar@gmail.com">✉️ Email</a></li>
-          <li><a href="https://linkedin.com/in/sushant-shidurkar" target="_blank">in LinkedIn</a></li>
-          <li><a href="assets/Sushant_Shidurkar_Profile.pdf" download>⬇️ Resume</a></li>
-        </ul>
+<header class="hero section">
+  <div class="bg"></div>
+  <div class="layer">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+  </div>
+  <div class="container hero-grid">
+    <div>
+      <div class="tag">Full Stack Developer · Java · Spring Boot · Vue · Angular · Azure</div>
+      <h1>Transforming complex problems into elegant, scalable solutions.</h1>
+      <p>I design and deliver enterprise-grade applications and microservices that empower businesses. Passionate about clean code, performance, and user-first design.</p>
+      <div class="actions">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn ghost" href="assets/Sushant_Shidurkar_Resume.pdf" download>Download Resume</a>
       </div>
-
-      <div class="hero__stats">
-        <div class="stat-card">
-          <p class="stat-value">9+ yrs</p>
-          <p class="stat-label">Experience</p>
-        </div>
-        <div class="stat-card">
-          <p class="stat-value">Java • Vue</p>
-          <p class="stat-label">Core Stack</p>
-        </div>
-        <div class="stat-card">
-          <p class="stat-value">Azure</p>
-          <p class="stat-label">Cloud</p>
-        </div>
+      <div class="stats">
+        <div class="stat"><strong>9+ yrs</strong><span>Experience</span></div>
+        <div class="stat"><strong>Full Stack</strong><span>Java · JS</span></div>
+        <div class="stat"><strong>Azure</strong><span>Cloud & CI/CD</span></div>
       </div>
-    </section>
+    </div>
+    <div class="avatar"><img src="assets/profile.svg" alt="Sushant Shidurkar" /></div>
+  </div>
+</header>
 
-    <section id="skills" class="section">
-      <h2 class="section__title">Skills</h2>
-      <div class="skills-grid" id="skills-grid"></div>
-    </section>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About</h2>
+    <p class="muted">I am a results-driven Full Stack Developer with over 9 years of experience building and modernizing applications for banking and financial institutions. From migrating legacy systems to architecting cloud-native microservices, I thrive on delivering solutions that balance performance, scalability, and usability.</p>
+  </div>
+</section>
 
-    <section id="experience" class="section">
-      <h2 class="section__title">Experience</h2>
-      <article class="timeline">
-        <div class="timeline__item">
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <h3>Full-Stack Developer — ABN AMRO Bank N.V.</h3>
-            <p class="meta">Apr 2021 – Present • Amsterdam</p>
-            <ul class="bullets">
-              <li>Led development of Loans & Compensation modules.</li>
-              <li>Vue migration, Java 17 upgrade, Azure DevOps CI/CD.</li>
-            </ul>
-            <div class="tags">
-              <span>Java</span><span>Spring Boot</span><span>Vue</span><span>Azure</span>
-            </div>
-          </div>
-        </div>
-        <div class="timeline__item">
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <h3>Tata Consultancy Services</h3>
-            <p class="meta">Nov 2015 – Present • Mumbai/Amsterdam</p>
-            <ul class="bullets">
-              <li>Held multiple engineering roles from ASE to Consultant.</li>
-              <li>Contributed to backend and cloud modernization.</li>
-            </ul>
-            <div class="tags">
-              <span>Azure DevOps</span><span>PostgreSQL</span><span>Jenkins</span>
-            </div>
-          </div>
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Java & Spring Boot</h3>
+        <div class="skill-meta"><span>Backend</span><div class="rating" data-stars="5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div>
+        <div class="progress"><span data-progress="95"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Microservices & REST APIs</h3>
+        <div class="skill-meta"><span>Architecture</span><div class="rating" data-stars="5"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div>
+        <div class="progress"><span data-progress="92"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Vue.js & Angular</h3>
+        <div class="skill-meta"><span>Frontend</span><div class="rating" data-stars="4"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div>
+        <div class="progress"><span data-progress="88"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Azure · CI/CD</h3>
+        <div class="skill-meta"><span>Cloud & DevOps</span><div class="rating" data-stars="4"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div>
+        <div class="progress"><span data-progress="85"></span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <div class="skill-meta"><span>PostgreSQL · Oracle · MongoDB</span><div class="rating" data-stars="4"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></div></div>
+        <div class="progress"><span data-progress="84"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Highlighted Projects</h2>
+    <div class="projects">
+      <article class="project">
+        <div class="thumb"></div>
+        <div class="body">
+          <h3>Consumer Credit Platform Modernization</h3>
+          <p class="muted">Redesigned and modernized core banking modules, migrating from legacy tech to Vue.js and Spring Boot. Integrated Azure DevOps pipelines, boosting release efficiency by 40%.</p>
+          <div class="meta"><span class="tag">Vue</span><span class="tag">Spring Boot</span><span class="tag">Azure</span></div>
         </div>
       </article>
-    </section>
-
-    <section id="projects" class="section">
-      <h2 class="section__title">Projects</h2>
-      <div class="projects-grid" id="projects-grid"></div>
-    </section>
-
-    <section id="education" class="section">
-      <h2 class="section__title">Education</h2>
-      <div class="card edu">
-        <h3>B.E. — Information Technology</h3>
-        <p class="meta">G.H. Raisoni College, Nagpur • 2011–2015</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section section--accent">
-      <h2 class="section__title">Contact</h2>
-      <p class="contact__copy">Open to senior full-stack roles and product engineering opportunities. Let’s build something impactful.</p>
-      <form class="contact__form" action="https://formsubmit.co/sushantshidurkar@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false" />
-        <div class="form__row">
-          <label>
-            Name
-            <input type="text" name="name" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required />
-          </label>
+      <article class="project">
+        <div class="thumb"></div>
+        <div class="body">
+          <h3>Document Upload Widget</h3>
+          <p class="muted">Built a reusable, accessible document upload widget adopted across multiple banking portals, reducing maintenance costs and improving UX.</p>
+          <div class="meta"><span class="tag">TypeScript</span><span class="tag">Accessibility</span></div>
         </div>
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button class="btn" type="submit">Send Message</button>
-        <p class="contact__alt">Prefer email? <a href="mailto:sushantshidurkar@gmail.com">sushantshidurkar@gmail.com</a></p>
-      </form>
-    </section>
-  </main>
+      </article>
+      <article class="project">
+        <div class="thumb"></div>
+        <div class="body">
+          <h3>API & Microservice Suite</h3>
+          <p class="muted">Architected and deployed RESTful microservices supporting onboarding and compensation systems, ensuring high availability and test coverage.</p>
+          <div class="meta"><span class="tag">Java</span><span class="tag">REST</span><span class="tag">JUnit</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Sushant Shidurkar • Mumbai, India</p>
-    <ul class="social">
-      <li><a href="#">Top ↑</a></li>
-    </ul>
-  </footer>
+<section id="experience" class="section">
+  <div class="container">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="title"><h4>Assistant Consultant · TCS</h4><span class="muted">Nov 2023 — Present</span></div>
+          <p>Leading development initiatives for ABN AMRO Bank with focus on frontend modernization, API integrations, and cloud deployments.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="title"><h4>IT Analyst · TCS</h4><span class="muted">Jan 2019 — Nov 2023</span></div>
+          <p>Modernized key banking applications, migrated CI/CD pipelines to Azure DevOps, and enhanced application security & performance.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="title"><h4>System Engineer · TCS</h4><span class="muted">Nov 2017 — Dec 2018</span></div>
+          <p>Developed robust backend services and collaborated with cross-functional teams to deliver critical features on time.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="title"><h4>Assistant System Engineer · TCS</h4><span class="muted">Nov 2015 — Nov 2017</span></div>
+          <p>Gained strong foundation in enterprise application development and agile delivery practices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact-grid">
+    <div class="card">
+      <h2>Let’s Connect</h2>
+      <p class="muted">Open to full-time and contract opportunities. If you're looking for a developer who blends technical expertise with business insight, drop me a message.</p>
+      <div style="margin-top:10px">
+        <a class="btn" href="mailto:sushantshidurkar@gmail.com">Email Me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/sushant-shidurkar" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <form id="contact-form" class="card" action="#" method="POST">
+      <input class="input" placeholder="Your name" name="name" required />
+      <input class="input" placeholder="Email" name="email" type="email" required />
+      <textarea class="input" placeholder="Message" name="message" required></textarea>
+      <button class="btn" style="margin-top:12px">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container row">
+    <div>© <span id="y"></span> Sushant Shidurkar</div>
+    <div>Built with ❤️ & deployed on GitHub Pages</div>
+  </div>
+  <div class="progress-footer"><div class="bar"><span></span></div></div>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
 </body>
 </html>
